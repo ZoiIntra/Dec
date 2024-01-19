@@ -587,8 +587,8 @@ function a:Window(f, f, f)
         function a:Toggle(a, b, d)
             b = b or false
             local e = b
-            _G.Color = Color3.fromRGB(43, 43, 43)
-            _G.TrueColor = Color3.fromRGB(30, 255, 64)
+            _G.Color = Color3.fromRGB(255, 255, 255)
+            _G.TrueColor = Color3.fromRGB(174, 0, 255)
             local g = Instance.new("UICorner")
             local g = Instance.new("UIPadding")
             local g = Instance.new("UIStroke")
