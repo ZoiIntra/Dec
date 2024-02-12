@@ -111,7 +111,7 @@ e.Active = true
 e.Selectable = true
 e.BackgroundTransparency = .1
 e.Image = "rbxassetid://14981376704"
-e.Visible = false
+e.Visible = true
 local a = Instance.new("UICorner")
 a.Name = "MCNR"
 a.Parent = e
@@ -123,7 +123,6 @@ e.MouseButton1Down:connect(
         e:TweenSize(UDim2.new(0, 50, 0, 50), "Out", "Quad", 0.2, true)
         game:GetService("VirtualInputManager"):SendKeyEvent(true, 305, false, game)
         game:GetService("VirtualInputManager"):SendKeyEvent(false, 305, false, game)
-        e.Visible = false
     end
 )
 do
@@ -206,7 +205,6 @@ function a:Window(f, f, f)
         function()
             game:GetService("VirtualInputManager"):SendKeyEvent(true, 305, false, game)
             game:GetService("VirtualInputManager"):SendKeyEvent(false, 305, false, game)
-            e.Visible = true
         end
     )
     local e = Instance.new("Frame")
