@@ -1,0 +1,14 @@
+local PlaceID = game.PlaceId
+local GameCode = " "
+if PlaceID == 2753915549 then
+    GameCode = "99ac02d6bfe9dc2440923bc4433a986a.lua" -- Blox Fruits
+elseif PlaceID == 4442272183 then
+    GameCode = "99ac02d6bfe9dc2440923bc4433a986a.lua" -- Blox Fruits
+elseif PlaceID == 7449423635 then
+    GameCode = "99ac02d6bfe9dc2440923bc4433a986a.lua" -- Blox Fruits
+elseif PlaceID == 537413528 then
+    GameCode = "85cd8842953689336265062b6d33fb68.lua" -- Build A Boat
+else
+    GameCode = "e79b4f406bdc396fbcc5984062d301e2.lua" -- Blade Ball
+end
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/"..GameCode))()
